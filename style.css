@@ -74,4 +74,33 @@
     color: #c8c8d4;
     margin: 74px 24px 0 24px;
   }
+
+  .technologies-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 24px 40px;
+    left: 12px;
+  }
   
+  .list-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #9490ff;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .lists {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  
+  .skills {
+    align-self: flex-start;
+  }
+  
+  hr {
+    border: 1px solid #646369;
+    margin: 34px 24px;
+  }
