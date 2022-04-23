@@ -104,3 +104,51 @@
     border: 1px solid #646369;
     margin: 34px 24px;
   }
+
+  .social-apps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin: 0 87.5px;
+  }
+  
+  .social-apps i {
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: 15px 15px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .work i {
+    color: #a2a3ae;
+    font-size: 24px;
+    justify-content: center;
+  }
+  
+  .work h3 {
+    color: #a2a3ae;
+    font-size: 24px;
+    justify-content: center;
+  }
+  
+  .recent-work {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    align-items: center;
+    color: #9490ff;
+    margin: 0 24px;
+  }
