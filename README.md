@@ -1,6 +1,6 @@
-# Portfolio: setup and mobile version skeleton
+# Portfolio: Desktop Version
 
-> Add contact section with a form and validate it
+> Create a user interface that is responsive to different screen sizes using media queries
 
 ## Built With
 
@@ -16,10 +16,15 @@ To get a local copy up and running follow these simple example steps.
 - code editor
 - git
 
+
+
 ### Setup
 
 - git init
 - git clone https://github.com/edubew/mobile_version_skeleton.git
+
+
+
 
 ## Authors
 
@@ -29,24 +34,16 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@edube_winne](https://twitter.com/edube_winne)
 - LinkedIn: [Winfred Edube](https://www.linkedin.com/in/winfred-edube-9820a422a/)
 
-## Collaborators
 
-👤 **Favour Ezeugwa**
 
-- GitHub: [@Favourezeugwa](https://github.com/Favourezeugwa)
-- LinkedIn: [Favour Amarachi Ezeugwa](https://www.linkedin.com/in/favour-amarachi-ezeugwa-a5bb31149/)
-
-👤 **Abdo Mohamed**
-
-- GitHub: [@Abdo9826](https://github.com/Abdo9826)
-- Twitter: [@Abdelrahman Mohamed](https://twitter.com/abodyalex1)
-- LinkedIn: [Abdelruhman Mihamed](https://www.linkedin.com/in/abdelruhman-mihamed-a42667179/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
+
 
 ## Show your support
 
