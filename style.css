@@ -192,14 +192,14 @@ hr {
   margin: 24px 0;
 }
 
-.border-right {
+ .border-right {
   border-right: 1px solid #646369;
-  padding-left: 12px;
+  padding: 12px;
 }
 
 .border-left {
   padding-right: 12px;
-  padding-left: 10px;
+  padding: 12px;
 }
 
 button {
@@ -217,3 +217,4 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 8px 16px rgba(125, 115, 252, 0.48);
 }
+
