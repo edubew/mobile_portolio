@@ -1,7 +1,8 @@
 
 # Portfolio: setup and mobile version skeleton
 
-> Add contact 
+> Add contact section with a form and validate it
+
 
 
 ## Built With
