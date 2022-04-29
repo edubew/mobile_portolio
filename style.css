@@ -154,7 +154,7 @@ hr {
 }
 
 .img-placeholder {
-  width: 100%;
+  width: 100vw;
 }
 
 .projects {
@@ -163,6 +163,8 @@ hr {
 
 .background-image {
   background-image: url("images/bg-image2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .project-description h3 {
@@ -277,7 +279,7 @@ textarea {
 }
 
 .footer-divider {
-  width: 375px;
+  width: 375vw;
   color: #3a3837;
   margin: 0;
 }
@@ -301,6 +303,10 @@ textarea {
   display: none;
 }
 
+.mobile {
+  display: block;
+}
+
 #work {
   display: none;
 }
@@ -311,9 +317,14 @@ textarea {
 
 /* Desktop version */
 @media only screen and (min-width: 768px)  {
+.mobile {
+  display: none;
+}
+
 .desktop {
   display: block;
 }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -356,7 +367,7 @@ textarea {
     }
 
   hr {
-    width: 65vw;
+    width: 448px;
     margin: auto;
   }
 
@@ -431,10 +442,64 @@ textarea {
 
   .work-divider {
     width: 80%;
-    margin-left: 35px;
+    margin: 0 10%;
   }
 
+  .background-image {
+    background-image: url("images/section2-image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 
- 
+  .projects-container {
+    margin: 0 40px;
+  }
+
+  .projects {
+    display: flex;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
+  .img-placeholder  img {
+    width: 52vw;
+    height: 448px;
+  }
+
+  .project-description {
+    margin-left: 22px;
+  }
+
+  .form-intro h3 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .form-intro p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .form-container {
+    padding: 0 calc(24px + 0.4 * (100vw - 375px));
+  }
+
+  #footer-email {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-apps {
+    margin: 0px;
+  }
+
+  .email {
+    margin: 10px;
+
+  }
   
 }
