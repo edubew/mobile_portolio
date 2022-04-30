@@ -15,7 +15,7 @@ li {
 }
 
 body {
-  width: 375px;
+  /* width: 375px; */
   overflow-x: hidden;
   background: #191765;
 }
@@ -154,15 +154,21 @@ hr {
 }
 
 .img-placeholder {
-  width: 100%;
+  width: 80vw;
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 24px 24px;
 }
 
 .background-image {
-  background-image: url("images/bg-image2.png");
+  background-image: url("images/bg-image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .project-description h3 {
@@ -277,7 +283,7 @@ textarea {
 }
 
 .footer-divider {
-  width: 375px;
+  width: 100%;
   color: #3a3837;
   margin: 0;
 }
@@ -291,4 +297,228 @@ textarea {
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+}
+
+#navbar-link {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+#work,
+#work1 {
+  display: none;
+}
+
+#social-links {
+  display: none;
+}
+
+/* Desktop version */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #navbar-link {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul,
+  li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-right: 20px;
+    font-weight: 600;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #headline-background {
+    background-image: url("images/section1-images.png");
+    background-size: contain;
+  }
+
+  .intro h1 {
+    font-size: 90px;
+  }
+
+  .intro h2 {
+    font-size: 40px;
+  }
+
+  .introduction p {
+    width: 447px;
+    height: 155px;
+    margin: 88px auto;
+  }
+
+  hr {
+    width: 448px;
+    margin: auto;
+  }
+
+  .technologies-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    margin: 24px 0;
+    width: 446px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work {
+    display: none;
+  }
+
+  .social-handles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 108px;
+  }
+
+  #social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin: 0 87.5px;
+  }
+
+  #social-links i {
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-intro h3 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  #work,
+  #work1 {
+    display: grid;
+    grid-template-columns: 15px 15px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  #work,
+  #work1 i {
+    color: #a2a3ae;
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  #work,
+  #work1 h3 {
+    color: #a2a3ae;
+    font-size: 24px;
+    justify-content: center;
+  }
+
+  .recent-work {
+    margin-left: 50px;
+    margin-bottom: 32px;
+  }
+
+  .work-divider {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  .background-image {
+    background-image: url("images/section2-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    top: -280px;
+  }
+
+  .frame {
+    top: 300px;
+    margin: 0;
+    padding: 0;
+    height: 1963.98px;
+    position: relative;
+  }
+
+  .projects-container {
+    margin: 0 142px;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .img-placeholder img {
+    width: 40vw;
+    height: 448px;
+  }
+
+  .project-description {
+    margin-left: 22px;
+  }
+
+  .form-intro p {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .form-container {
+    padding: 0 calc(24px + 0.4 * (100vw - 375px));
+  }
+
+  #footer-email {
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-apps {
+    margin: 0;
+  }
+
+  .email {
+    margin: 10px;
+  }
 }

@@ -24,6 +24,12 @@
     <header>
         <a class="logo" href="">Edube</a>
         <nav>
+          <ul id="navbar-link">
+            <li><a href="" class="nav-links">Portfolio</a></li>
+            <li><a href="" class="nav-links">About</a></li>
+            <li><a href="" class="nav-links">Contact</a></li>
+            <li><a href="" class="nav-links"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
           <div class="hamburger">
             <span class="bars"></span>
             <span class="bars"></span>
@@ -33,7 +39,7 @@
       </header>
        <!-- The headline section -->
 
-    <section class="headline">
+    <section class="headline" id="headline-background">
         <div class="intro">
           <h1>Winfred Edube</h1>
           <h2>Software Developer</h2>
@@ -78,7 +84,12 @@
             </div>
           </div>
           <hr class="bottom-divider" />
-          <ul class="social-apps">
+          <div class="social-handles desktop">
+          <div id="work">
+            <i class="fa-solid fa-arrow-down"></i>
+            <h3>Work</h3>
+          </div>
+          <ul class="social-apps" id="social-links">
             <li>
               <a href=""><i class="fa-brands fa-github"></i></a>
             </li>
@@ -95,6 +106,11 @@
               <a href=""><i class="fa-solid fa-m"></i></a>
             </li>
           </ul>
+          <div id="work1">
+            <i class="fa-solid fa-arrow-down"></i>
+            <h3>Work</h3>
+          </div>
+        </div>
         </section>
          <!-- The second section. Main body -->
 
@@ -104,10 +120,34 @@
           <h3>Work</h3>
         </div>
         <h2 class="recent-work">MY RECENT WORK</h2>
-        <hr />
+        <hr class="work-divider" />
         <div class="background-image">
+          <div class="frame">
             <div class="projects-container">
               <div class="projects">
+                <div class="img-placeholder">
+                  <img src="images/img-placeholder.png" alt="">
+                </div>
+                <div class="project-description">
+                  <h3>Multi-Post Stories</h3>
+                  <p>
+                    A daily selection of privately personalized reads; no accounts or
+                    sign-ups required. has been the industry's standard dummy text
+                    ever since the 1500s, when an unknown printer took a standard
+                    dummy text.
+                  </p>
+                  <ul class="list-tags">
+                    <li class="border-right">css</li>
+                    <li class="border-right">html</li>
+                    <li class="border-right">bootstrap</li>
+                    <li class="border-left">Ruby</li>
+                  </ul>
+                  <button type="button">See Project</button>
+                </div>
+              </div>
+            </div>
+            <div class="projects-container">
+              <div class="projects reverse">
                 <div class="img-placeholder">
                   <img src="images/img-placeholder.png" alt="">
                 </div>
@@ -153,30 +193,7 @@
               </div>
             </div>
             <div class="projects-container">
-              <div class="projects">
-                <div class="img-placeholder">
-                  <img src="images/img-placeholder.png" alt="">
-                </div>
-                <div class="project-description">
-                  <h3>Multi-Post Stories</h3>
-                  <p>
-                    A daily selection of privately personalized reads; no accounts or
-                    sign-ups required. has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a standard
-                    dummy text.
-                  </p>
-                  <ul class="list-tags">
-                    <li class="border-right">css</li>
-                    <li class="border-right">html</li>
-                    <li class="border-right">bootstrap</li>
-                    <li class="border-left">Ruby</li>
-                  </ul>
-                  <button type="button">See Project</button>
-                </div>
-              </div>
-            </div>
-            <div class="projects-container">
-              <div class="projects">
+              <div class="projects reverse">
                 <div class="img-placeholder">
                   <img src="images/img-placeholder.png" alt="">
                 </div>
@@ -199,13 +216,15 @@
               </div>
             </div>
           </div>
+          </div>
         </section>  
 
         <!-- Contacts area -->
 
         <section>
           <div class="form-container">
-                <h3>CONTACT US</h3>
+                <h3 class="mobile">CONTACT US</h3>
+                <h3 class="desktop">Let's chat</h3>
                 <p>If you have an application you are
                     interested in developing, a feature that
                     you need built or a project that needs
@@ -226,6 +245,7 @@
         </div>
         <footer>
          <hr class="footer-divider">
+         <div id="footer-email">
           <ul class="social-apps">
             <li>
               <a href=""><i class="fa-brands fa-github"></i></a>
@@ -246,6 +266,7 @@
           <ul class="email">
             <li><a href="">edubew98@gmail.com</a></li>
           </ul>
+        </div>
         </footer>
        
 
