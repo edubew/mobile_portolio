@@ -154,17 +154,21 @@ hr {
 }
 
 .img-placeholder {
-  width: 100vw;
+  width: 80vw;
 }
 
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 24px 24px;
 }
 
 .background-image {
-  background-image: url("images/bg-image2.png");
-  background-size: contain;
+  background-image: url("images/bg-image.png");
+  background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .project-description h3 {
@@ -279,7 +283,7 @@ textarea {
 }
 
 .footer-divider {
-  width: 375vw;
+  width: 100%;
   color: #3a3837;
   margin: 0;
 }
@@ -367,10 +371,10 @@ textarea {
     margin: 88px auto;
   }
 
-  hr {
+   hr {
     width: 448px;
     margin: auto;
-  }
+  } 
 
   .technologies-container {
     display: grid;
@@ -457,24 +461,38 @@ textarea {
 
   .background-image {
     background-image: url("images/section2-image.png");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    width: 100%;
+    top: -280px;
+  }
+
+  .frame {
+    top: 300px;
+    margin: 0;
+    padding: 0;
+    height: 1963.98px;
+    position: relative;
+    
   }
 
   .projects-container {
-    margin: 0 40px;
+    margin: 0 142px;
   }
 
   .projects {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .reverse {
     flex-direction: row-reverse;
+    justify-content: center;
   }
 
   .img-placeholder img {
-    width: 52vw;
+    width: 40vw;
     height: 448px;
   }
 
