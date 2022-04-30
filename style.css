@@ -371,10 +371,10 @@ textarea {
     margin: 88px auto;
   }
 
-   hr {
+  hr {
     width: 448px;
     margin: auto;
-  } 
+  }
 
   .technologies-container {
     display: grid;
@@ -473,7 +473,6 @@ textarea {
     padding: 0;
     height: 1963.98px;
     position: relative;
-    
   }
 
   .projects-container {
