@@ -74,6 +74,7 @@ header {
   text-align: center;
   color: #c8c8d4;
   margin: 74px 24px 0 24px;
+  animation: slide-up 2s;
 }
 
 .technologies-container {
@@ -321,10 +322,6 @@ textarea {
   display: none;
 }
 
-.introduction p {
-  animation: slide-up 2s;
-}
-
 @keyframes slide-up {
   from {
     opacity: 0.2;
@@ -335,7 +332,6 @@ textarea {
     opacity: 1;
     line-height: 28px;
   }
-  
 }
 
 
