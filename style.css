@@ -15,7 +15,6 @@ li {
 }
 
 body {
-  /* width: 375px; */
   overflow-x: hidden;
   background: #191765;
 }
@@ -56,6 +55,8 @@ header {
   text-align: center;
   margin-top: 44px;
   padding: 12px;
+  transition: 2s;
+  transform: rotate(360deg);
 }
 
 .intro h2 {
@@ -319,6 +320,24 @@ textarea {
 #social-links {
   display: none;
 }
+
+.introduction p {
+  animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0.2;
+    line-height: 70px;
+  }
+
+  to {
+    opacity: 1;
+    line-height: 28px;
+  }
+  
+}
+
 
 /* Desktop version */
 @media only screen and (min-width: 768px) {
