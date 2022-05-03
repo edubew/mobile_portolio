@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 ## 🤝 Contributing
-
+Thanks to Mister Massaillon for contributing
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
