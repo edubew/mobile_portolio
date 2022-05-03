@@ -37,6 +37,12 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [Winfred Edube](https://www.linkedin.com/in/winfred-edube-9820a422a/)
 
 
+## Collaborator
+👤 ** massaillon **
+
+- GitHub: [@massaillon]
+- LinkedIn: [Massaillon Silue]
+
 
 
 ## 🤝 Contributing
