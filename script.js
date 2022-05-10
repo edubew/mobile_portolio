@@ -11,11 +11,11 @@ hamburger.addEventListener('click', () => {
      navbarLink.classList.toggle('active');
      if(click==1){
          logo.innerText="";
-         click--;
+         click++;
      }
      else {
          logo.innerText= "Edube";
-         click++;
+         click--;
      }
 });
 
@@ -24,7 +24,7 @@ document.querySelectorAll('.nav-links').forEach((e) => e.addEventListener('click
     hamburger.classList.remove('active');
     navbarLink.classList.remove('active');
      logo.innerText = 'Edube';
-     click++;
+     click--;
   }));
 
 
