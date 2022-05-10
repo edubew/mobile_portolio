@@ -22,25 +22,27 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="">Edube</a>
-        <nav>
-          <ul id="navbar-link">
-            <li><a href="" class="nav-links">Portfolio</a></li>
-            <li><a href="" class="nav-links">About</a></li>
-            <li><a href="" class="nav-links">Contact</a></li>
-            <li><a href="edubew98@gmail.com" class="nav-links"><i class="fa-solid fa-envelope"></i></a></li>
-          </ul>
+        <nav class="active navbar">
+          <div class="header-container">
+          <a class="logo" href="">Edube</a>
           <div class="hamburger">
             <span class="bars"></span>
             <span class="bars"></span>
             <span class="bars"></span>
           </div>
+        </div>
+          <ul class="navbar-link hide">
+            <li class="nav-links"><a href="#Portfolio">Portfolio</a><i class="fa-solid fa-angle-right"></i></li>
+            <li class="nav-links"><a href="#About">About</a><i class="fa-solid fa-angle-right"></i></li>
+            <li class="nav-links"><a href="#Contact">Contact</a><i class="fa-solid fa-angle-right"></i></li>
+            <li><a href="edubew98@gmail.com" class="nav-link"><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
         </nav>
       </header>
        <!-- The headline section -->
 
     <section class="headline" id="headline-background">
-        <div class="intro">
+        <div class="intro" id="About">
           <h1>Winfred Edube</h1>
           <h2>Software Developer</h2>
         </div>
@@ -119,7 +121,7 @@
           <i class="fa-solid fa-arrow-down"></i>
           <h3>Work</h3>
         </div>
-        <h2 class="recent-work">MY RECENT WORK</h2>
+        <h2 class="recent-work" id="Portfolio">MY RECENT WORK</h2>
         <hr class="work-divider" />
         <div class="background-image">
           <div class="frame">
@@ -222,7 +224,7 @@
         <!-- Contacts area -->
 
         <section>
-          <div class="form-container">
+          <div class="form-container" id="Contact">
                 <h3 class="mobile">CONTACT US</h3>
                 <h3 class="desktop">Let's chat</h3>
                 <p>If you have an application you are
@@ -271,6 +273,7 @@
        
 
         </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
