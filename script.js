@@ -18,7 +18,6 @@ hamburger.addEventListener('click', () => {
   }
 });
 
-// Set the
 document.querySelectorAll('.nav-links').forEach((e) => e.addEventListener('click', () => {
   hamburger.classList.remove('active');
   navbarLink.classList.remove('active');
