@@ -212,7 +212,7 @@ hr {
 }
 
 button {
-  background-color: #1F1FFF;
+  background-color: #1f1fff;
   padding: 20px;
   color: #fff;
   border: none;
@@ -279,7 +279,7 @@ textarea {
 .form-button {
   width: 89px;
   height: 48px;
-  background: #1F1FFF;
+  background: #1f1fff;
   color: white;
   font-weight: 600;
   align-self: center;
@@ -290,6 +290,21 @@ textarea {
   width: 100%;
   color: #3a3837;
   margin: 0;
+}
+
+ul,
+li a {
+  text-decoration: none;
+  color: #f9f9f9;
+  left: 0;
+  font-size: 16px;
+  margin-top: 30px;
+  font-weight: 500;
+}
+
+.nav-links a {
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .email {
@@ -324,20 +339,10 @@ textarea {
   display: none;
 }
 
-/* Mobile menu styling  --starts here---*/
+/* Mobile menu styling  --starts here--- */
 
 .active {
   display: block;
-}
-
-ul,
-li a {
-  text-decoration: none;
-  color: #f9f9f9;
-  left: 0;
-  font-size: 16px;
-  margin-top: 30px;
-  font-weight: 500;
 }
 
 .nav-link {
@@ -351,14 +356,9 @@ li a {
   align-items: center;
 }
 
-.nav-links a {
-  font-size: 24px;
-  font-weight: 600;
-}
-
 .nav-links i {
   font-size: 24px;
-color: #5e42d7;
+  color: #5e42d7;
 }
 
 .navbar-link {
@@ -397,6 +397,7 @@ color: #5e42d7;
     line-height: 28px;
   }
 }
+
 /* Paragraph animation --end-- */
 
 
@@ -410,6 +411,15 @@ color: #5e42d7;
     display: block;
   }
 
+  ul,
+  li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
   .nav-links {
     margin: 0;
   }
@@ -417,7 +427,7 @@ color: #5e42d7;
   .nav-links i {
     display: none;
   }
-  
+
   .nav-links a {
     font-size: 15px;
     font-weight: 600;
@@ -435,15 +445,6 @@ color: #5e42d7;
     justify-content: space-around;
     height: 0;
     padding: 0;
-  }
-
-  ul,
-  li a {
-    text-decoration: none;
-    color: #f9f9f9;
-    margin-right: 20px;
-    font-size: 16px;
-    font-weight: 600;
   }
 
   .hamburger {
