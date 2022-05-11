@@ -53,3 +53,28 @@ const mainContainer = projects.map((work)=> ` <div class="projects-container">
 // append the main container in js to the main-body container in html
 const mainBody = document.querySelector(".frame");
 mainBody.innerHTML+= mainContainer;
+
+// The modal window
+
+const modalWindow= document.querySelector(".modal-window");
+const wrapContainer= document.querySelector(".wrapping-container");
+
+const windowContent = (modal)=> {
+  const template= document.createElement('template');
+  template.innerHTML = ` <div class="heading-container">
+  <h2>${modal.title}</h2>
+  <button class="close"><i class="fa-solid fa-xmark"></i></button>
+ </div>
+ <div class="modal-content">
+   <img src="images/${modal.mobileImage}" class="image-placeholder mobile" alt="">
+   <img src="images/${modal.desktopImage}" class="image-placeholder desktop" alt="">
+   <p>${modal.desc}</p>
+   <ul class="list-tags">${modal.technologies.map((technology)=>`<li class="border-right">${technology}</li>`).join('')}
+   </ul>
+   <div class="submit">
+     <button type="button">See Live<img src="images/Icon.png" alt=""></button>
+     <button type="button">See Source<i class="fa-brands fa-github"></i></button>
+   </div>
+ </div>`
+
+}
