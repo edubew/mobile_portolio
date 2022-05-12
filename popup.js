@@ -75,6 +75,7 @@ const windowContent = (modal)=> {
      <button type="button">See Live<img src="images/Icon.png" alt=""></button>
      <button type="button">See Source<i class="fa-brands fa-github"></i></button>
    </div>
- </div>`
+ </div>`;
 
+ 
 }
