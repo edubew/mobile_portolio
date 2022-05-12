@@ -12,6 +12,7 @@ const projects =[
         ' A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard dummy textever since the 1500s when an unknown printer took a standard dummy text.',
         technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
         technologies2: ['html', 'Ruby on rails', 'css', 'Github'],
+        container: 'projects',
     },
     {
         id: 2,
@@ -24,6 +25,7 @@ const projects =[
         ' A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard dummy textever since the 1500s when an unknown printer took a standard dummy text.',
         technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
         technologies2: ['html', 'Ruby on rails', 'css', 'Github'],
+        container: 'projects reverse',
     },
     {
         id: 3,
@@ -36,6 +38,7 @@ const projects =[
         ' A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard dummy textever since the 1500s when an unknown printer took a standard dummy text.',
         technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
         technologies2: ['html', 'Ruby on rails', 'css', 'Github'],
+        container: 'projects',
     },
     {
         id: 4,
@@ -48,11 +51,12 @@ const projects =[
         ' A daily selection of privately personalized reads; no accounts or sign-ups required has been the industrys standard dummy textever since the 1500s when an unknown printer took a standard dummy text.',
         technologies: ['css', 'html', 'Bootstrap', 'Ruby'],
         technologies2: ['html', 'Ruby on rails', 'css', 'Github'],
+        container: 'projects reverse',
     },
 ];
 
 const mainContainer = projects.map((work)=> ` <div class="projects-container">
-<div class="projects">
+<div class="${work.container}">
   <div class="img-placeholder">
     <img src="images/${work.featuredImage}" alt="${work.title}">
   </div>
@@ -74,6 +78,7 @@ mainBody.innerHTML+= mainContainer;
 
 const modalWindow= document.querySelector(".modal-window");
 const wrapContainer= document.querySelector(".wrapping-container");
+const body =document.querySelector("body");
 
 const windowContent = (modal)=> {
   const template= document.createElement('template');
@@ -101,6 +106,8 @@ const showModal= (id)=> {
     if(Number(id)=== Number(item.id)){
       windowContent(item);
     }
+    body.style.overflowY= "hidden";
+    console.log(body.style.overflowY);
     return undefined;
   });
 };
@@ -108,4 +115,5 @@ const showModal= (id)=> {
 function closeModal() {
   modalWindow.innerHTML = '';
   wrapContainer.classList.remove('active');
+  body.style.overflowY= "visible";
 }
