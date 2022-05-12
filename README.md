@@ -2,10 +2,9 @@
 
 ## DOM manipulation
 > In this project, use javascript DOM to implement the following changes: 
-  - When the user clicks (or taps) the hamburger button, the mobile menu appears.
-  - When the user clicks (or taps) the close (X) button, the mobile menu disappears.
-  - When the user clicks (or taps) any of the mobile menu options, the mobile menu disappears.
-  - When the user clicks (or taps) any of the mobile menu options, a correct part of the page is displayed.
+  - For each project you need to store the following pieces of data in a JavaScript object, at a minimum:   name, description, featured image, technologies, link to live version, link to source.
+- You need to update the main page so that the projects section is created dynamically using the           information stored in that JavaScript object. Remember, all of the HTML in that section is created when the page loads.
+- After that, you could implement the popup window.
 
 ## Built With
 
