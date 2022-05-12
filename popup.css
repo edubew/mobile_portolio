@@ -1,5 +1,6 @@
-.wrapping-container{
+.wrapping-container .active{
     display: none;
+    position: absolute;
 }
 
 .modal-window {
@@ -7,7 +8,9 @@
     border: 1px solid #ffffff;
     box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
     margin: 50px 24px 0px 24px;
+    z-index: 5;
     display: flex;
+    overflow: hidden;
     justify-content: center;
     flex-direction: column;
 }
