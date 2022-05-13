@@ -4,23 +4,19 @@
 
 .modal-window {
   background: hsl(242deg 38% 27%);
-  border: 1px solid #fff;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   margin: 50px 24px 0 24px;
-  display: flex;
+  overflow-y: auto;
+  height: 100vh;
   position: fixed;
   z-index: 2;
-  top: -36px;
-  overflow: hidden;
-  justify-content: center;
-  flex-direction: column;
+  top: -48px;
 }
 
 .heading-container {
   display: flex;
   justify-content: space-between;
   margin: 24px 24px;
-  position: relative;
 }
 
 .heading-container h2 {
