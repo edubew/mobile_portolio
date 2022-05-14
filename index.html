@@ -22,10 +22,6 @@
     <title>My portfolio</title>
 </head>
 <body>
-  <div class="wrapping-container">
-    <div class="modal-window">
-      
-    </div>
     <header>
         <nav class="active navbar">
           <div class="header-container">
@@ -47,6 +43,10 @@
        <!-- The headline section -->
 
     <section class="headline" id="headline-background">
+      <div class="wrapping-container">
+        <div class="modal-window">
+          
+        </div>
         <div class="intro" id="About">
           <h1>Winfred Edube</h1>
           <h2>Software Developer</h2>
@@ -91,7 +91,7 @@
             </div>
           </div>
           <hr class="bottom-divider" />
-          <div class="social-handles desktop">
+          <div class="social-handles mobile desktop">
           <div id="work">
             <i class="fa-solid fa-arrow-down"></i>
             <h3>Work</h3>
@@ -118,6 +118,7 @@
             <h3>Work</h3>
           </div>
         </div>
+      </div>
         </section>
          <!-- The second section. Main body -->
 
@@ -155,6 +156,7 @@
                 <textarea name="message" required
                     maxlength="500"
                     placeholder="Enter your message here"></textarea>
+                    <div id="error"></div>
                 <button type="submit"
                     class="form-button">Send</button>
             </form>
@@ -164,16 +166,16 @@
          <div id="footer-email">
           <ul class="social-apps">
             <li>
-              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="https://github.com/edubew"><i class="fa-brands fa-github"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/winfred-edube-9820a422a/"><i class="fa-brands fa-linkedin-in"></i></a>
             </li>
             <li>
               <a href="#"><i class="fa-brands fa-angellist"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://twitter.com/edube_winne"><i class="fa-brands fa-twitter"></i></a>
             </li>
             <li>
               <a href="#"><i class="fa-solid fa-m"></i></a>
@@ -185,11 +187,11 @@
         </div>
         </footer>
        
-
         </section>
     <script src="script.js"></script>
     <script src="popup.js"></script>
-  </div>
+    <script src="form_validation.js"></script>
+  
 </body>
 
 </html>
