@@ -1,12 +1,27 @@
-// form object
-const contactForm = {
-  name: document.querySelector('#name').value,
-  email: document.querySelector('#email').value,
-  text: document.querySelector('#text').value,
-};
+let personalInformation = {};
+function contact() {
+  personalInformation = {
+    username: document.querySelector('#name').value,
+    email: document.querySelector('#email').value,
+    text: document.querySelector('#text').value,
+  };
 
-// Store javascript objects in local storage
-window.localStorage.setItem('contactForm', JSON.stringify(contactForm));
+  localStorage.setItem('contactForm', JSON.stringify(personalInformation));
+}
+const checkLocalStorage = localStorage.getItem('contactForm');
 
-// Retrieve the previously saved object as a JSON string
-const newForm = window.localStorage.getItem('contactForm');
+if (checkLocalStorage) {
+  document.querySelector('#name').value = JSON.parse(checkLocalStorage).username;
+  document.querySelector('#email').value = JSON.parse(checkLocalStorage).email;
+  document.querySelector('#text').value = JSON.parse(checkLocalStorage).text;
+} else {
+  document.querySelector('#name').onchange = () => {
+    contact();
+  };
+  document.querySelector('#email').onchange = () => {
+    contact();
+  };
+  document.querySelector('#text').onchange = () => {
+    contact();
+  };
+}
