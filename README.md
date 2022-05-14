@@ -2,9 +2,8 @@
 
 ## DOM manipulation
 > In this project, use javascript DOM to implement the following changes: 
- - When the user submits the form, you check if the email is in lower case.
- -If the validation is OK, the form is sent.
-- If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
+ - When the user changes the content of any input field, the data is saved to the local storage.
+- When the user loads the page, if there is any data in the local storage the input fields are pre-filled  with this data.
 
 ## Built With
 
@@ -36,9 +35,10 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@edubew](https://github.com/edubew)
 - Twitter: [@edube_winne](https://twitter.com/edube_winne)
 - LinkedIn: [Winfred Edube](https://www.linkedin.com/in/winfred-edube-9820a422a/)
+ 
 
-
-
+  **Abdo** 
+  Github: [@Abdo9826](https://github.com/Abdo9826)
 
 ## 🤝 Contributing
 

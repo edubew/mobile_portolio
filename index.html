@@ -148,12 +148,12 @@
                     coding. I’d love to help with it </p>
             <form id="form" action="https://formspree.io/f/mvolalaq"
                 method="POST">
-                  <input type="text" name="Username"
+                  <input type="text" name="Username" id="name"
                     placeholder="Name" required
                     maxlength="30">
                 <input type="email" id="email" name="user-email"
                     placeholder="Your email" required>
-                <textarea name="message" required
+                <textarea name="message" id="text" required
                     maxlength="500"
                     placeholder="Enter your message here"></textarea>
                     <div id="error"></div>
@@ -191,6 +191,7 @@
     <script src="script.js"></script>
     <script src="popup.js"></script>
     <script src="form_validation.js"></script>
+    <script src="local_storage.js"></script>
   
 </body>
 
