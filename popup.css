@@ -63,7 +63,7 @@
 
 /* custom message styling for form validation */
 
-  #error {
+#error {
   font-size: 16px;
   font-style: italic;
 }

@@ -2,9 +2,9 @@
 
 ## DOM manipulation
 > In this project, use javascript DOM to implement the following changes: 
-  - For each project you need to store the following pieces of data in a JavaScript object, at a minimum:   name, description, featured image, technologies, link to live version, link to source.
-- You need to update the main page so that the projects section is created dynamically using the           information stored in that JavaScript object. Remember, all of the HTML in that section is created when the page loads.
-- After that, you could implement the popup window.
+ - When the user submits the form, you check if the email is in lower case.
+ -If the validation is OK, the form is sent.
+- If the validation is not OK, you show an error message to the user near the submit button informing them of the error and the form is not sent.
 
 ## Built With
 
